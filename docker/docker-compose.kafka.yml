@@ -18,6 +18,7 @@ services:
   kafka:
     restart: always
     image: "bitnamilegacy/kafka:4.0"
+    hostname: kafka
     ports:
       - "9092:9092"
     env_file:
